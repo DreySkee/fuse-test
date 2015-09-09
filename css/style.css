@@ -1,3 +1,47 @@
-body {
-  background: red;
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/AvenirLTStd-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Elephant';
+  src: url("../fonts/ElephantItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeueMedium.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.inside {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  padding-top: 15px;
+}
+header #logo {
+  position: relative;
+  width: 206px;
+}
+header #logo img {
+  width: 100%;
+}
+header #logo a.sub-link {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  font-family: 'Avenir';
+  color: #4d81c0;
+  font-size: 14px;
+  font-weight: 800;
+}
+header form {
+  float: right;
 }

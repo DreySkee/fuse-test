@@ -1,3 +1,62 @@
-body {
-	background: red; 
+@max-width: 1140px;
+
+@color-border: #ddddde;
+@color-main: #f3f3f3;
+@color-font-main: #1f1f1f;
+@color-font-light: #636a6f;
+@color-font-link: #4d81c0;
+
+@font-face {
+  	font-family: 'Avenir';
+ 	src: url("../fonts/AvenirLTStd-Medium.otf") format("opentype");
+}
+@font-face {
+  	font-family: 'Elephant';
+ 	src: url("../fonts/ElephantItalic.ttf") format("truetype");
+}
+@font-face {
+  	font-family: 'HelveticaNeue';
+ 	src: url("../fonts/HelveticaNeueMedium.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.inside { 
+	width: 100%;
+	max-width: @max-width;
+	margin: 0 auto;
+} 
+
+header {
+	width: 100%;
+	padding-top: 15px;
+
+	#logo {
+		position: relative;
+		width: 206px;
+
+		img {
+			width: 100%;
+		}
+		a.sub-link {	
+			position: absolute;
+			right: 10px;
+			bottom: 0;
+			font-family: 'Avenir';
+			color: @color-font-link;
+			font-size: 14px;
+			font-weight: 800;
+		}
+	}
+
+	form {
+		float: right;
+	}
 }
