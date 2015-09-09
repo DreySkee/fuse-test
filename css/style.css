@@ -17,6 +17,17 @@
 a {
   text-decoration: none;
 }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
 .inside {
   width: 100%;
   max-width: 1140px;
@@ -25,10 +36,12 @@ a {
 header {
   width: 100%;
   padding-top: 15px;
+  font-family: 'Avenir';
 }
 header #logo {
   position: relative;
   width: 206px;
+  float: left;
 }
 header #logo img {
   width: 100%;
@@ -37,11 +50,44 @@ header #logo a.sub-link {
   position: absolute;
   right: 10px;
   bottom: 0;
-  font-family: 'Avenir';
   color: #4d81c0;
   font-size: 14px;
   font-weight: 800;
 }
 header form {
   float: right;
+  margin-top: 40px;
+}
+header form input[type="text"] {
+  width: 430px;
+  height: 30px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border: 1px solid #ddddde;
+  border-radius: 4px 0 0 4px;
+  background: url('../images/icon-search.png') 10px center no-repeat;
+}
+header form input[type="submit"] {
+  width: 50px;
+  height: 30px;
+  box-sizing: border-box;
+  background: #626262;
+  color: #fff;
+  font-size: 12px;
+  margin-left: -5px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+}
+header form a {
+  float: right;
+  margin-left: 10px;
+  display: inline-block;
+  height: 30px;
+  background: #4d81c0;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 30px;
+  padding: 0 12px;
+  font-size: 12px;
 }
