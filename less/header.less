@@ -1,0 +1,161 @@
+header {
+	width: 100%;
+	padding-top: 15px;
+	font-family: 'AvenirHeavy';
+	
+	.header-top {
+		margin-bottom: 20px;
+
+		#logo {
+			position: relative;
+			width: 206px;
+			float: left;
+
+			img {
+				width: 100%;
+			}
+			a.sub-link {	
+				position: absolute;
+				right: 10px;
+				bottom: 0;
+				color: @color-font-link;
+				font-size: 14px;
+			}
+		}
+
+		form {
+			float: right;
+			margin-top: 40px;
+
+			input[type="text"] {
+				width: 430px;
+				height: 30px;
+				padding-left: 40px;
+				box-sizing: border-box;
+				border: 1px solid @color-border;
+				border-radius: 4px 0 0 4px;
+				background: url('../images/icon-search.png') 10px center no-repeat;
+			}
+			input[type="submit"] {
+				width: 50px;
+				height: 30px;
+				box-sizing: border-box;
+				background: #626262;
+				color: #fff;
+				font-size: 12px;
+				margin-left: -5px;
+				border-radius:  0 4px 4px 0;
+				border: none;
+				cursor: pointer;
+			}
+
+			a {
+				float: right;
+				margin-left: 10px;
+				display: inline-block;
+				height: 30px;
+				background: @color-font-link;
+				color: #fff;
+				border-radius: 4px;
+				line-height: 30px;
+				padding: 0 12px;
+				font-size: 12px;
+			}
+		}	
+	}
+	
+
+	#main-nav {
+		width: 100%;
+		height: 44px;
+		box-sizing: border-box;
+		padding-top: 12px;
+		font-size: 12px;
+		border-top: 1px solid @color-border;
+		border-bottom: 1px solid @color-border;
+
+		ul {
+
+			li {
+				float: left;
+				padding-right: 20px;
+				margin-right: 20px;
+				border-right: 1px solid @color-border;
+
+				a {
+					position: relative;
+					top: 2px;
+					font-weight: 800;
+					text-transform: uppercase;
+					color: @color-font-main;
+				}
+			}
+
+			li:last-child {
+				border-right: none;
+				margin-right: 0;
+				padding-right: 0;
+			}
+		}
+
+		ul.log-in {
+			float: right;
+
+			li {
+				a {
+					text-transform: capitalize;
+				}
+			}
+			li:last-child {
+				a {
+					color: @color-font-link;	
+				}
+			}
+		}	
+	}
+
+	#sub-nav {
+		width: 100%;
+		height: 35px;
+		box-sizing: border-box;
+		border-bottom: 1px solid @color-border;
+		background: @color-main;
+		font-size: 12px;
+		font-family: 'HelveticaNeue';
+
+		ul {
+			line-height: 35px;
+			li {
+				float: left;
+				margin-right: 20px;
+				a {
+					text-transform: capitalize;
+					color: @color-font-light;	
+				}
+			}	
+			li:last-child {
+				margin-right: 0;
+			}
+		}
+
+		ul.account {
+			float: right;
+
+			li {
+				&.my-list, &.my-cart {
+					font-family: 'AvenirHeavy';	
+				}
+				&.my-list {
+					a {
+						color: @color-font-main;
+					}
+				}
+				&.my-cart {
+					a {
+						color: @color-font-link;
+					}
+				}
+			}
+		}
+	}
+}

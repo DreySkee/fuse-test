@@ -3,12 +3,20 @@
   src: url("../fonts/AvenirLTStd-Medium.otf") format("opentype");
 }
 @font-face {
+  font-family: 'AvenirHeavy';
+  src: url("../fonts/AvenirLTStd-Heavy.otf") format("opentype");
+}
+@font-face {
   font-family: 'Elephant';
   src: url("../fonts/ElephantItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueMedium.ttf") format("truetype");
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url("../fonts/HelveticaNeueLight.ttf") format("truetype");
 }
 * {
   margin: 0;
@@ -16,6 +24,9 @@
 }
 a {
   text-decoration: none;
+}
+ul {
+  list-style-type: none;
 }
 .clearfix:before,
 .clearfix:after {
@@ -36,29 +47,31 @@ a {
 header {
   width: 100%;
   padding-top: 15px;
-  font-family: 'Avenir';
+  font-family: 'AvenirHeavy';
 }
-header #logo {
+header .header-top {
+  margin-bottom: 20px;
+}
+header .header-top #logo {
   position: relative;
   width: 206px;
   float: left;
 }
-header #logo img {
+header .header-top #logo img {
   width: 100%;
 }
-header #logo a.sub-link {
+header .header-top #logo a.sub-link {
   position: absolute;
   right: 10px;
   bottom: 0;
   color: #4d81c0;
   font-size: 14px;
-  font-weight: 800;
 }
-header form {
+header .header-top form {
   float: right;
   margin-top: 40px;
 }
-header form input[type="text"] {
+header .header-top form input[type="text"] {
   width: 430px;
   height: 30px;
   padding-left: 40px;
@@ -67,7 +80,7 @@ header form input[type="text"] {
   border-radius: 4px 0 0 4px;
   background: url('../images/icon-search.png') 10px center no-repeat;
 }
-header form input[type="submit"] {
+header .header-top form input[type="submit"] {
   width: 50px;
   height: 30px;
   box-sizing: border-box;
@@ -79,7 +92,7 @@ header form input[type="submit"] {
   border: none;
   cursor: pointer;
 }
-header form a {
+header .header-top form a {
   float: right;
   margin-left: 10px;
   display: inline-block;
@@ -90,4 +103,76 @@ header form a {
   line-height: 30px;
   padding: 0 12px;
   font-size: 12px;
+}
+header #main-nav {
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  padding-top: 12px;
+  font-size: 12px;
+  border-top: 1px solid #ddddde;
+  border-bottom: 1px solid #ddddde;
+}
+header #main-nav ul li {
+  float: left;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #ddddde;
+}
+header #main-nav ul li a {
+  position: relative;
+  top: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1f1f1f;
+}
+header #main-nav ul li:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+header #main-nav ul.log-in {
+  float: right;
+}
+header #main-nav ul.log-in li a {
+  text-transform: capitalize;
+}
+header #main-nav ul.log-in li:last-child a {
+  color: #4d81c0;
+}
+header #sub-nav {
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddddde;
+  background: #f3f3f3;
+  font-size: 12px;
+  font-family: 'HelveticaNeue';
+}
+header #sub-nav ul {
+  line-height: 35px;
+}
+header #sub-nav ul li {
+  float: left;
+  margin-right: 20px;
+}
+header #sub-nav ul li a {
+  text-transform: capitalize;
+  color: #636a6f;
+}
+header #sub-nav ul li:last-child {
+  margin-right: 0;
+}
+header #sub-nav ul.account {
+  float: right;
+}
+header #sub-nav ul.account li.my-list,
+header #sub-nav ul.account li.my-cart {
+  font-family: 'AvenirHeavy';
+}
+header #sub-nav ul.account li.my-list a {
+  color: #1f1f1f;
+}
+header #sub-nav ul.account li.my-cart a {
+  color: #4d81c0;
 }

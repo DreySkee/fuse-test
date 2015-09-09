@@ -1,0 +1,54 @@
+@max-width: 1140px;
+
+@color-border: #ddddde;
+@color-main: #f3f3f3;
+@color-font-main: #1f1f1f;
+@color-font-light: #636a6f;
+@color-font-link: #4d81c0;
+
+@font-face {
+  	font-family: 'Avenir';
+ 	src: url("../fonts/AvenirLTStd-Medium.otf") format("opentype");
+}
+@font-face {
+  	font-family: 'AvenirHeavy';
+ 	src: url("../fonts/AvenirLTStd-Heavy.otf") format("opentype");
+}
+@font-face {
+  	font-family: 'Elephant';
+ 	src: url("../fonts/ElephantItalic.ttf") format("truetype");
+}
+@font-face {
+  	font-family: 'HelveticaNeue';
+ 	src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+}
+@font-face {
+  	font-family: 'HelveticaNeueLight';
+ 	src: url("../fonts/HelveticaNeueLight.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+
+.inside { 
+	width: 100%;
+	max-width: @max-width;
+	margin: 0 auto;
+}
