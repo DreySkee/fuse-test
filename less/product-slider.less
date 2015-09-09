@@ -1,0 +1,104 @@
+.product-slider {
+	width: 100%;
+
+	h3 {
+		text-transform: uppercase;
+		background: @color-main;
+		font-family: 'AvenirHeavy';
+		font-size: 18px;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 20px;
+		margin-bottom: 30px;
+
+		a {
+			text-transform: capitalize;
+			float: right;
+			color: @color-font-link;
+			font-size: 15px;
+			font-family: 'HelveticaNeue';
+		}
+	}
+
+	.slider-mask {
+		position: relative;
+		width: 100%;
+		padding: 0 35px;
+		box-sizing: border-box;
+
+		.slide {
+			width: 16.5%;
+			float: left;
+			padding: 0 10px;
+			box-sizing: border-box;
+			font-family: 'Avenir';
+			font-size: 15px;
+			
+			img {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+
+			a {
+				color: @color-font-link;
+			}
+			
+			.rating {
+				position: relative;
+				width: 120px;
+				background: url('../images/icon-star.png') repeat-x;
+				height: 21px;
+				margin: 10px 0;
+
+				a {
+					position: absolute;
+					top: 5px;
+    				right: -25px;
+				}
+				a:before {
+					content: "(";
+					color: @color-font-main;
+					cursor: default;
+					pointer-events: none;
+				}
+				a:after {
+					content: ")";
+					color: @color-font-main;
+					cursor: default;
+					pointer-events: none;
+				}
+			}
+			.price {
+				color: #f12a2f;
+			}
+		}
+
+		.slide:nth-child(odd) {
+			.rating {
+				width: 85px;
+			}
+		}
+
+
+	}
+	.arrow {
+		position: absolute;
+		cursor: pointer;
+
+		
+		&.left {
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 26px;
+			background: url('../images/icon-arrow-left.png') no-repeat center 70px;
+		}
+		&.right {
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 26px;
+			background: url('../images/icon-arrow-right.png') no-repeat center 70px;
+		}
+	}
+}
