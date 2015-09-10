@@ -70,6 +70,8 @@ header .header-top #logo a.sub-link {
   bottom: 0;
   color: #4d81c0;
   font-size: 14px;
+  padding-right: 12px;
+  background: url('../images/icon-plus.png') right 2px no-repeat;
 }
 header .header-top form {
   float: right;
@@ -185,9 +187,20 @@ header #sub-nav ul.account li.my-cart a {
   padding: 65px 0;
   box-sizing: border-box;
 }
+@media (max-width: 1140px) {
+  #carousel {
+    height: auto;
+  }
+}
 #carousel .carousel-mask {
   width: 844px;
   float: left;
+}
+@media (max-width: 1140px) {
+  #carousel .carousel-mask {
+    width: 100%;
+    float: none;
+  }
 }
 #carousel .carousel-mask .slide {
   position: relative;
@@ -226,10 +239,17 @@ header #sub-nav ul.account li.my-cart a {
   line-height: 30px;
   padding: 0 12px;
   font-size: 12px;
+  margin-top: 40px;
 }
 #carousel div.carousel-nav {
   width: 275px;
   float: right;
+}
+@media (max-width: 1140px) {
+  #carousel div.carousel-nav {
+    width: 100%;
+    float: none;
+  }
 }
 #carousel div.carousel-nav div.item {
   position: relative;
@@ -240,10 +260,23 @@ header #sub-nav ul.account li.my-cart a {
   padding-top: 20px;
   cursor: pointer;
 }
+@media (max-width: 1140px) {
+  #carousel div.carousel-nav div.item {
+    width: 25%;
+    float: left;
+    border-right: 1px solid #ddddde;
+  }
+}
 #carousel div.carousel-nav div.item img {
   float: left;
   width: 72px;
   height: 72px;
+}
+@media (max-width: 1140px) {
+  #carousel div.carousel-nav div.item img {
+    width: 40px;
+    height: 40px;
+  }
 }
 #carousel div.carousel-nav div.item .item-copy {
   float: left;
@@ -255,10 +288,20 @@ header #sub-nav ul.account li.my-cart a {
   font-weight: 200;
   font-size: 16px;
 }
+@media (max-width: 1140px) {
+  #carousel div.carousel-nav div.item .item-copy h4 {
+    font-size: 12px;
+  }
+}
 #carousel div.carousel-nav div.item .item-copy h2 {
   font-family: 'AvenirHeavy';
   text-transform: uppercase;
   font-size: 22px;
+}
+@media (max-width: 1140px) {
+  #carousel div.carousel-nav div.item .item-copy h2 {
+    font-size: 18px;
+  }
 }
 #carousel div.carousel-nav div.item.active {
   background: #e9e9e9;
@@ -363,4 +406,34 @@ header #sub-nav ul.account li.my-cart a {
   bottom: 0;
   width: 26px;
   background: url('../images/icon-arrow-right.png') no-repeat center 70px;
+}
+footer {
+  min-height: 325px;
+  background: #f4f4f4;
+  border-top: 1px solid #ddddde;
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 40px 0 65px 0;
+}
+footer section {
+  width: 16.5%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+footer section h4 {
+  font-family: "Avenir";
+  font-size: 13px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddddde;
+}
+footer section ul li {
+  margin-bottom: 5px;
+}
+footer section ul a {
+  color: #4d81c0;
+  font-family: 'HelveticaNeue';
+  font-size: 12px;
 }

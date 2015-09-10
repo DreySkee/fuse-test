@@ -1,4 +1,6 @@
-# fuse-test
+# FUSE test
+
+I made the page somewhat responsive with a breakpoint at 1140px. Most of the sections are fluid.
 
 # Running the project
 
